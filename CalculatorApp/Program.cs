@@ -15,10 +15,8 @@ class Program
             Console.WriteLine("Enter the operation (add, subtract, multiply, divide):");
             string operation = Console.ReadLine()?.ToLower() ?? string.Empty;
 
-            // Create an instance of the Calculator class
             var calculator = new Calculator();    
 
-            // Call the PerformOperation method
             double result = calculator.PerformOperation(num1, num2, operation);
             Console.WriteLine($"The result is: {result}");
         }
